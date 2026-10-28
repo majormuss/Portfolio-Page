@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A portfolio of web development projects.">
+  <title>My Portfolio | Projects</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <h1 id="hero-heading">Mustafa Ibrahim</h1>
+    <p>Aspiring full stack developer.</p>
+      
+      
+    <nav aria-label="Main navigation">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#mission">Mission</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- The hero background image is set in styles.css. Add your own headshot later. -->
+    <section class="hero" aria-labelledby="hero-heading">
+      
+      <!-- Optional profile photo: replace the placeholder source with your own image. -->
+      <img class="profile-photo" src="images/profile-placeholder.svg" alt="Placeholder for a future profile photograph" width="160" height="160">
+      <h3>Building useful, accessible web applications.</h3>
+    </section>
+
+    <section id="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About</h2>
+      <p>I'm a physics grad turned software developer. I build clean, accessible web pages <br> and I'm training to become a full stack engineer. Here's what I've been building</p>
+    </section>
+
+    <section id="projects" aria-labelledby="projects-heading">
+      <h2 id="projects-heading">Featured Projects</h2>
+      <div class="project-cards">
+        <article class="project-card">
+          <!-- TODO: Add a real screenshot when available. -->
+          <h3>Aphelion</h3>
+          <img src="images/desktop-reference.png" alt="Screenshot of Aphelion project" width="300" height="200">
+          <p>A space exploration website showcasing cosmic imagery and astronomical discoveries.</p>
+          <p>Status: In progress</p>
+          <!-- TODO: Add your GitHub or live-demo link. -->
+        </article>
+        <article class="project-card">
+          <h3>GOT webpage</h3>
+          <div class="GOT"><img src="images/got.jpg" alt="Screenshot of Game of Thrones webpage project" width="300" height="200"></div>
+          <p>A Game of Thrones–inspired webpage featuring an illustrated map and house sigils.</p>
+          <!-- TODO: Add screenshot, technologies, and project link. -->
+        </article>
+        <article class="project-card">
+          <h3>Helios Dynamics</h3>
+          <img src="images/REFERENCE-WEBSITE.png" alt="Screenshot of Helios Dynamics project" width="300" height="200">
+          <p>An alternative space-themed website exploring the wonders of the universe.</p>
+        </article>
+        <!-- Extra cards begin hidden; make the See More button reveal them in script.js. -->
+        <article class="project-card extra-project" hidden>
+          <h3>Forge Signal</h3>
+          <img src="images/01-desktop-top.png" alt="Screenshot of Forge Signal project" width="300" height="200">
+          <p>Webpage for Forge Signal project showcasing its features and technologies.</p>
+        </article>
+        <article class="project-card extra-project" hidden>
+          <h3>[Additional project 2]</h3>
+          <p>[Project description and technologies.]</p>
+        </article>
+        <article class="project-card extra-project" hidden>
+          <h3>[Additional project 3]</h3>
+          <p>[Project description and technologies.]</p>
+        </article>
+      </div>
+      <!-- TODO: Use JavaScript to reveal/hide the extra cards and update this button. -->
+      <button id="toggle-projects" type="button" aria-expanded="false">See More Projects</button>
+    </section>
+
+    <section id="mission" aria-labelledby="mission-heading">
+      <h2 id="mission-heading">Mission</h2>
+      <p>[What you want to build and why.]</p>
+    </section>
+
+    <section id="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+      <p>[Add a professional contact method or a link to a separate page.]</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 [Portfolio name]</p>
+  </footer>
+</body>
+</html>
